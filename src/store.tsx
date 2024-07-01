@@ -38,7 +38,7 @@ export const UseFeedsStore = create<IFeedState>((set, get) => ({
 
             if (get().initFeedsClimb != true) {                
                 let entriesClimb: FeedEntry[] | undefined = undefined;
-                await fetch('/climb/')
+                await fetch('/MyCv/climb/')
                     .then(response => {
                         response.text().then(xml => {
                             const feed = extractFromXml(xml);
