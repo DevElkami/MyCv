@@ -13,7 +13,7 @@ export default defineConfig({
             },
             "/climb/": {
                 target: "https://climb.elkami.fr/feed",
-                changeOrigin: true,
+                changeOrigin: false,
                 secure: false,
                 rewrite: (path) => path.replace(/^\/climb/, ""),
             },
