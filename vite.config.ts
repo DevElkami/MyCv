@@ -6,16 +6,14 @@ export default defineConfig({
     server: {
         proxy: {
             "/blog/": {
-                target: "https://blog.elkami.fr",
+                target: "https://blog.elkami.fr/feed",
                 changeOrigin: true,
                 secure: false,
-                rewrite: (path) => path.replace(/^\/blog/, "https://blog.elkami.fr/feed"),
             },
             "/climb/": {
-                target: "https://climb.elkami.fr",
+                target: "https://climb.elkami.fr/feed",
                 changeOrigin: true,
-                secure: false,
-                rewrite: (path) => path.replace(/^\/climb/, "https://climb.elkami.fr/feed"),
+                secure: false,                
             },
         },
     },
