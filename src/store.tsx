@@ -18,7 +18,7 @@ export const UseFeedsStore = create<IFeedState>((set, get) => ({
         try {
             if (get().initFeedsBlog != true) {
                 let entriesBlog: FeedEntry[] | undefined = undefined;
-                await fetch('/blog/')
+                await fetch('/MyCv/blog/')
                     .then(response => {
                         response.text().then(xml => {
                             const feed = extractFromXml(xml);
