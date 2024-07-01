@@ -18,7 +18,7 @@ export const UseFeedsStore = create<IFeedState>((set, get) => ({
         try {
             if (get().initFeedsBlog != true) {
                 let entriesBlog: FeedEntry[] | undefined = undefined;
-                await fetch('/MyCv/blog/')
+                await fetch('/blog/')
                     .then(response => {
                         response.text().then(xml => {
                             const feed = extractFromXml(xml);
@@ -38,7 +38,7 @@ export const UseFeedsStore = create<IFeedState>((set, get) => ({
 
             if (get().initFeedsClimb != true) {                
                 let entriesClimb: FeedEntry[] | undefined = undefined;
-                await fetch('/MyCv/climb/')
+                await fetch('/climb/')
                     .then(response => {
                         response.text().then(xml => {
                             const feed = extractFromXml(xml);
