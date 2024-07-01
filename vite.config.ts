@@ -15,7 +15,7 @@ export default defineConfig({
                 target: "https://climb.elkami.fr/feed",
                 changeOrigin: false,
                 secure: false,
-                rewrite: (path) => return "",
+                rewrite: (path) => path = "",
             },
         },
     },
