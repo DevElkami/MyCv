@@ -10,6 +10,10 @@ export default defineConfig({
                 changeOrigin: true,
                 secure: false,
                 rewrite: (path) => path.replace(/^\/blog/, ''),
+                configure: (proxy, _options) => {
+                  proxy.on("error", (err, _req, _res) => {
+                    console.log("proxy error", err);
+                  });
             },
             "^/climb/.*": {
                 target: "https://climb.elkami.fr/feed",
