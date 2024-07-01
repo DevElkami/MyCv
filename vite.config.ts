@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({    
     server: {        
         proxy: {
-            "https://develkami.github.io/blog": {
+            "/blog": {
                 target: "https://blog.elkami.fr/feed",
                 changeOrigin: true,
                 secure: false,
