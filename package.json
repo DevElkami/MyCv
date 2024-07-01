@@ -2,7 +2,7 @@
   "name": "mycv",
   "private": true,
   "version": "1.0.0",
-  "homepage":"/MyCv/",
+  "homepage":".",
   "type": "module",
   "scripts": {
     "dev": "vite",
