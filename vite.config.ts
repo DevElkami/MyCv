@@ -5,17 +5,17 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({    
     server: {
         proxy: {
-            "/MyCv/blog/": {
-                target: "https://blog.elkami.fr",
+            "/blog/": {
+                target: "https://blog.elkami.fr/feed",
                 changeOrigin: true,
                 secure: false,
-                rewrite: (path) => path.replace(/^\/MyCv\/blog/, "https://blog.elkami.fr/feed"),
+                rewrite: (path) => path.replace(/^\/blog/, ""),
             },
-            "/MyCv/climb/": {
-                target: "https://climb.elkami.fr",
+            "/climb/": {
+                target: "https://climb.elkami.fr/feed",
                 changeOrigin: true,
                 secure: false,
-                rewrite: (path) => path.replace(/^\/MyCv\/climb/, "https://climb.elkami.fr/feed"),
+                rewrite: (path) => path.replace(/^\/climb/, ""),
             },
         },
     },
