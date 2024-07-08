@@ -3,49 +3,20 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({    
-    server: {        
+    server: {
         proxy: {
-            "^/blog/.*": {
-                target: "https://blog.elkami.fr/feed",
+            "/blog/": {
+                target: "https://blog.elkami.fr",
                 changeOrigin: true,
                 secure: false,
-                rewrite: (path) => path.replace(/^\/blog/, ''),
-                configure: (proxy, _options) => {
-                  proxy.on("error", (err, _req, _res) => {
-                    console.log("proxy error", err);
-                  });
-                  proxy.on("proxyReq", async (proxyReq, req, _res) => {
-             
-                    const requestBody = await getPostData(req);
-                    console.log("requestBody", requestBody);
-                    console.log(
-                      "Sending Request:",
-                      req.method,
-                      req.url,
-                      " => TO THE TARGET =>  ",
-                      proxyReq.method,
-                      proxyReq.protocol,
-                      proxyReq.host,
-                      proxyReq.path,
-                      JSON.stringify(proxyReq.getHeaders()),
-                    );
-                  });
-                  proxy.on("proxyRes", (proxyRes, req, _res) => {
-                    console.log(
-                      "Received Response from the Target:",
-                      proxyRes.statusCode,
-                      req.url,
-                      JSON.stringify(proxyRes.headers),
-                    );
-                  });
-                },
+                rewrite: (path) => path.replace(/^\/blog/, "https://blog.elkami.fr/feed"),
             },
-            "^/climb/.*": {
-                target: "https://climb.elkami.fr/feed",
+            "/climb/": {
+                target: "https://climb.elkami.fr",
                 changeOrigin: true,
                 secure: false,
-                rewrite: (path) => path.replace(/^\/climb/, ''),
-            },            
+                rewrite: (path) => path.replace(/^\/climb/, "https://climb.elkami.fr/feed"),
+            },
         },
     },
     plugins: [react()],
