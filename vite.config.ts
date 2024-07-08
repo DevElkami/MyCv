@@ -49,5 +49,5 @@ export default defineConfig({
         },
     },
     plugins: [react()],
-    base: '/MyCv/'    
+    base: '/MyCv/'
 })
