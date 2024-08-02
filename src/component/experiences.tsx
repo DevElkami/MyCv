@@ -1,6 +1,7 @@
-import { Stack, Typography, Accordion, Avatar, AccordionSummary, AccordionDetails, Card, CardContent, Box } from "@mui/material";
+import { Stack, Typography, Accordion, Avatar, AccordionSummary, AccordionDetails, Card, CardContent, Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
 
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
 function Experiences() {
     return (
@@ -26,13 +27,44 @@ function Experiences() {
                                     <Typography variant="subtitle1" component="div">Cyberjet</Typography>
                                 </Stack>
                                 <Stack spacing={{ xs: 1 }} direction="row" alignItems="center">
-                                    <Typography variant="body2" color="text.secondary">Now - 2023</Typography>
+                                    <Typography variant="body2" color="text.secondary">Now - 2022</Typography>
                                 </Stack>
                             </Box>
                         </AccordionSummary>
                         <AccordionDetails>
-                            <Typography>
-                                WINDEV FOREVER
+                            <Typography component={'span'}>
+                                <List>
+                                    <ListItem disablePadding>
+                                        <ListItemButton>
+                                            <ListItemIcon><ArrowRightIcon color="secondary" /></ListItemIcon>
+                                            <ListItemText>React (Syncfusion, Zustand)</ListItemText>
+                                        </ListItemButton>
+                                    </ListItem>                                     
+                                    <ListItem disablePadding>
+                                        <ListItemButton>
+                                            <ListItemIcon><ArrowRightIcon color="secondary" /></ListItemIcon>
+                                            <ListItemText>Api REST / ASP.NET (C#, .net 8.0, Swagger, Entity, Visual Studio 2022)</ListItemText>
+                                        </ListItemButton>
+                                    </ListItem>
+                                    <ListItem disablePadding>
+                                        <ListItemButton>
+                                            <ListItemIcon><ArrowRightIcon color="secondary" /></ListItemIcon>
+                                            <ListItemText>Sql server (SQL Server Management Studio, stored procedure, dacpac)</ListItemText>
+                                        </ListItemButton>
+                                    </ListItem>
+                                    <ListItem disablePadding>
+                                        <ListItemButton>
+                                            <ListItemIcon><ArrowRightIcon color="secondary" /></ListItemIcon>
+                                            <ListItemText>Azure Dev Ops (Pipelines, Artifacts, Releases, Deployment groups)</ListItemText>
+                                        </ListItemButton>
+                                    </ListItem>
+                                    <ListItem disablePadding>
+                                        <ListItemButton>
+                                            <ListItemIcon><ArrowRightIcon color="secondary" /></ListItemIcon>
+                                            <ListItemText>Aviation regulations (EASA ORO.FTL, EU-OPS)</ListItemText>
+                                        </ListItemButton>
+                                    </ListItem>
+                                </List>
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
@@ -54,14 +86,26 @@ function Experiences() {
                                     <Typography variant="subtitle1" component="div">i2S</Typography>
                                 </Stack>
                                 <Stack spacing={{ xs: 1 }} direction="row" alignItems="center">
-                                    <Typography variant="body2" color="text.secondary">2008 - 2023</Typography>
+                                    <Typography variant="body2" color="text.secondary">2008 - 2022</Typography>
                                 </Stack>
                             </Box>
                         </AccordionSummary>
                         <AccordionDetails>
-                            <Typography>
-                                Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-                                Aliquam eget maximus est, id dignissim quam.
+                        <Typography component={'span'}>
+                                <List>
+                                    <ListItem disablePadding>
+                                        <ListItemButton>
+                                            <ListItemIcon><ArrowRightIcon color="secondary" /></ListItemIcon>
+                                            <ListItemText>WPF / Winform (C#, .net 5.0, Visual studio 2019)</ListItemText>
+                                        </ListItemButton>
+                                    </ListItem>                                                                         
+                                    <ListItem disablePadding>
+                                        <ListItemButton>
+                                            <ListItemIcon><ArrowRightIcon color="secondary" /></ListItemIcon>
+                                            <ListItemText>Sql (SQL Server, MySQL, SQLite, Dapper)</ListItemText>
+                                        </ListItemButton>
+                                    </ListItem>                                    
+                                </List>
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
@@ -108,8 +152,8 @@ function Experiences() {
                                     width: '100%'
                                 }}>
                                 <Stack spacing={{ xs: 1 }} direction="row" alignItems="center">
-                                    <Avatar style={{ border: '0px solid' }} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAApVBMVEX///+81eiTu9ilxdwyi7sphbkQfbXg6vMviLjW5O4thrQshbXv9/nT6uvH5efg8PH2+vqq2tyi2NzM3ujn8fRPprxBqLpHr7pMtblxwsJWvb5TvMPB3eQ7oblnwsdmxMpFjrqaydnM6ehlxcTC1+WOz9GV1NhYvLqByMa84eUuorRTs7+BvcqBxM1tv8RBjcAAdbJEncZLqMcgdq8ulMFcj7pvrdH/ADRIAAAA5klEQVR4AbXORaLDMAxF0Rfm2OFELjNzu/+dfYYGZ73TY0vCK5NkpR1VTTda0VQ1qxXtLnRU5wNdz/cZAB6EvIxRnKRZnucFByPBSmhHvf4nEhXAYPj80x7ZEcY9z5tMiTyEQ5TQnOErRjTHovxT/UWXpgWbDlnzz+UynAwGfg1dzt3VktgHrqtj3U2W5USECjqqKSFOt0KIJnRmwG6/P+QkXK+K2u+1gkJv2IIQYj4ZDp9xZGrSHy78MsqadjR+cb0uI9c1/XTSdfV82R5QQUSn60e6c7skbg0xu3/pIwbA9oMYL+wdtP0YxAKBjwsAAAAASUVORK5CYII=" />
-                                    <Typography variant="subtitle1" component="div">L3i</Typography>
+                                    <Avatar style={{ border: '0px solid' }} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAxlBMVEX////h7/O41uCixtS0zNna5euq1t8on7YAkK0SjKoZh6cbgKMYeJ4MbZctcZmbsscmrL4pmbIrjKorhaYueJ4OX44xZZLU3OUnpbpOm7Uwa5YASYLI0Nz6/v4jucclssIAmLGnz9unwNENZpMyXo7o6/CD1d3S6O36/P0zWIpfc5uLydVorMFrn7mLpr4QPHrE7O8ApbmIv88MVokrTIKnr8Sj4uZ9ialRp7205+uPuMp+pr5Kx9FfssXW8PPH3OVRkK67wtKCOHIdAAAA8UlEQVR4AcTQQwIDMQAF0F/bto2xef9TNWPuGycvxp9DoVgqlSu5VK3VG81Wu9PtZVf1a7VBfThqjbuT6Sxt/TlZuViQlcvpah23zXbXn+8PTvN4Wk7Pq0sMrwRrN+B+B2aT6fnxjC8k+ALerfYH+E7ODypaShNkCmAbw1G7hwp3fvBCiKKDdzi3bY9xd1BK4gZyIw8VB4u4NZutLBacC81JraoXLY3QHTS8mwMpNHcEa4OSZanj2XqSRIguNpwzT5NpCvFi5sHHLzkuhbj19wPnKd3Tcl1ZpZAwKw9HtrYGMKOk3/AkCkctfElGfKDSKgD+wB9vHYZqwAAAAABJRU5ErkJggg==" />
+                                    <Typography variant="subtitle1" component="div">Arpège</Typography>
                                 </Stack>
                                 <Stack spacing={{ xs: 1 }} direction="row" alignItems="center">
                                     <Typography variant="body2" color="text.secondary">2005 - 2006</Typography>
@@ -122,7 +166,36 @@ function Experiences() {
                                 Aliquam eget maximus est, id dignissim quam.
                             </Typography>
                         </AccordionDetails>
-                    </Accordion>                    
+                    </Accordion>
+                    <Accordion>
+                        <AccordionSummary
+                            expandIcon={<ArrowDropDownIcon color="secondary" />}
+                            aria-controls="panel1bh-content"
+                            sx={{ maxHeight: 16 }}
+                            id="panel1bh-header">
+                            <Box
+                                sx={{
+                                    display: 'flex',
+                                    justifyContent: 'space-between',
+                                    borderRadius: 1,
+                                    width: '100%'
+                                }}>
+                                <Stack spacing={{ xs: 1 }} direction="row" alignItems="center">
+                                    <Avatar style={{ border: '0px solid' }} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAApVBMVEX///+81eiTu9ilxdwyi7sphbkQfbXg6vMviLjW5O4thrQshbXv9/nT6uvH5efg8PH2+vqq2tyi2NzM3ujn8fRPprxBqLpHr7pMtblxwsJWvb5TvMPB3eQ7oblnwsdmxMpFjrqaydnM6ehlxcTC1+WOz9GV1NhYvLqByMa84eUuorRTs7+BvcqBxM1tv8RBjcAAdbJEncZLqMcgdq8ulMFcj7pvrdH/ADRIAAAA5klEQVR4AbXORaLDMAxF0Rfm2OFELjNzu/+dfYYGZ73TY0vCK5NkpR1VTTda0VQ1qxXtLnRU5wNdz/cZAB6EvIxRnKRZnucFByPBSmhHvf4nEhXAYPj80x7ZEcY9z5tMiTyEQ5TQnOErRjTHovxT/UWXpgWbDlnzz+UynAwGfg1dzt3VktgHrqtj3U2W5USECjqqKSFOt0KIJnRmwG6/P+QkXK+K2u+1gkJv2IIQYj4ZDp9xZGrSHy78MsqadjR+cb0uI9c1/XTSdfV82R5QQUSn60e6c7skbg0xu3/pIwbA9oMYL+wdtP0YxAKBjwsAAAAASUVORK5CYII=" />
+                                    <Typography variant="subtitle1" component="div">L3i</Typography>
+                                </Stack>
+                                <Stack spacing={{ xs: 1 }} direction="row" alignItems="center">
+                                    <Typography variant="body2" color="text.secondary">2004 - 2005</Typography>
+                                </Stack>
+                            </Box>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Typography>
+                                Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
+                                Aliquam eget maximus est, id dignissim quam.
+                            </Typography>
+                        </AccordionDetails>
+                    </Accordion>
                 </Stack>
             </CardContent>
         </Card>
