@@ -21,8 +21,13 @@ function WhoIam({ action }: Props) {
     const cryptPhone = useRef(null);
     const cryptPhoneOrg: string = "MDYgNjMgMTEgMjggNzk=";
 
-    useGSAP(() => {
-        gsap.fromTo(document.getElementById("myavatar"), { rotation: "-=40" },  { duration: 3, transformOrigin: "50% 50%", repeat: 0, rotation: "+=40", opacity: 1, ease: "bounce" });
+    useGSAP(() => {        
+        gsap.to(document.getElementById("myavatar"), {
+            duration: 1.5,
+            y: -16,
+            repeat: -1,
+            yoyo: true
+        });
         gsap.to(document.getElementById("cryptName"), { opacity: 1, duration: 5 });
         gsap.to(document.getElementById("cryptEmail"), { opacity: 1, duration: 5 });
         gsap.to(document.getElementById("cryptPhone"), { opacity: 1, duration: 5 });
@@ -64,6 +69,7 @@ function WhoIam({ action }: Props) {
                                 sx={{ "&:hover": {
                                       cursor: `pointer`,
                                     },
+                                    border: '1.5px solid #9C27B0',
                                     width: 64, height: 64 }} 
                                 alt="Dev Elkami" 
                                 src="https://github.githubassets.com/assets/starstruck-default-b6610abad518.png" />
