@@ -14,8 +14,8 @@ function Experiences() {
         <Card>
             <CardContent>                
                 <Stack direction="column" spacing={{ xs: 1, sm: 1, md: 1 }}>
-                    <Typography variant="h5" component="div" align="left">Work experience</Typography>     
-                    <Timeline sx={{ [`& .${timelineItemClasses.root}:before`]: { flex: 0, padding: 0, }}}>
+                    <Typography variant="h5" component="div" align="left">Work experience</Typography>                    
+                    <Timeline sx={{ [`& .${timelineItemClasses.root}:before`]: { flex: 0, padding: 0 }}}>
                         <TimelineItem>
                             <TimelineSeparator>
                             <TimelineDot color="secondary" />
@@ -193,10 +193,10 @@ function Experiences() {
                         </TimelineItem>
                         <TimelineItem>
                             <TimelineSeparator>
-                            <TimelineDot color="secondary" />                            
-                            </TimelineSeparator>                            
+                            <TimelineDot color="secondary" />
+                            </TimelineSeparator>
                         </TimelineItem>
-                    </Timeline>                                                           
+                    </Timeline>
                 </Stack>
             </CardContent>
         </Card>

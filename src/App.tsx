@@ -10,7 +10,6 @@ import Skills from './component/skills'
 import Languages from './component/languages'
 import Interests from './component/interests'
 import Summary from './component/summary'
-import ToggleTheme from './component/toggleTheme'
 
 const darkTheme = createTheme({ palette: { mode: 'dark' } });
 const lightTheme = createTheme({ palette: { mode: 'light' } });
@@ -23,7 +22,7 @@ function App() {
                 <Grid container rowSpacing={2} columnSpacing={4}>
                     <Grid xs={4} >
                         <Stack direction="column" spacing={{ xs: 1, sm: 2, md: 3 }}>
-                            <WhoIam />
+                            <WhoIam action={() => setLight((prev) => !prev)} />
                             <Languages />
                             <Interests />
                         </Stack>
@@ -38,7 +37,6 @@ function App() {
                         </Stack>
                     </Grid>
                 </Grid>
-                <ToggleTheme action={() => setLight((prev) => !prev)} />
             </ThemeProvider>
         </>
     )
