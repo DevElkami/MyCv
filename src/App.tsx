@@ -1,4 +1,4 @@
-﻿import { Unstable_Grid2 as Grid, Stack, ThemeProvider, createTheme } from "@mui/material";
+﻿import { Unstable_Grid2 as Grid, Stack, ThemeProvider, createTheme, CssBaseline } from "@mui/material";
 
 import React from "react";
 
@@ -19,24 +19,26 @@ function App() {
     return (
         <>
             <ThemeProvider theme={light ? lightTheme : darkTheme}>
-                <Grid container rowSpacing={2} columnSpacing={4}>
-                    <Grid xs={4} >
-                        <Stack direction="column" spacing={{ xs: 1, sm: 2, md: 3 }}>
-                            <WhoIam action={() => setLight((prev) => !prev)} />
-                            <Languages />
-                            <Skills />
-                            <Interests />
-                        </Stack>
-                    </Grid>
+                <CssBaseline>
+                    <Grid container rowSpacing={2} columnSpacing={4}>
+                        <Grid xs={4} >
+                            <Stack direction="column" spacing={{ xs: 1, sm: 2, md: 3 }}>
+                                <WhoIam action={() => setLight((prev) => !prev)} />
+                                <Languages />
+                                <Skills />
+                                <Interests />
+                            </Stack>
+                        </Grid>
 
-                    <Grid xs>
-                        <Stack direction="column" spacing={{ xs: 1, sm: 2, md: 3 }}>
-                            <Summary />
-                            <Experiences />
-                            <Qualifications />
-                        </Stack>
+                        <Grid xs>
+                            <Stack direction="column" spacing={{ xs: 1, sm: 2, md: 3 }}>
+                                <Summary />
+                                <Experiences />
+                                <Qualifications />
+                            </Stack>
+                        </Grid>
                     </Grid>
-                </Grid>
+                </CssBaseline>
             </ThemeProvider>
         </>
     )
