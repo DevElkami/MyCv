@@ -58,7 +58,15 @@ function WhoIam({ action }: Props) {
                 <Stack direction="column" spacing={{ xs: 1, sm: 2, md: 3 }}>
                     <Stack spacing={{ xs: 4 }}>
                         <Stack spacing={{ xs: 1 }} direction="row" alignItems="center">
-                            <Avatar onClick={action} id="myavatar" sx={{ width: 64, height: 64 }} alt="Dev Elkami" src="https://github.githubassets.com/assets/starstruck-default-b6610abad518.png" />
+                            <Avatar 
+                                onClick={action} 
+                                id="myavatar" 
+                                sx={{ "&:hover": {
+                                      cursor: `pointer`,
+                                    },
+                                    width: 64, height: 64 }} 
+                                alt="Dev Elkami" 
+                                src="https://github.githubassets.com/assets/starstruck-default-b6610abad518.png" />
                             <Typography sx={{ opacity: 0 }} id="cryptName" variant="h5" component="div" ref={cryptName}></Typography>
                         </Stack>
                         <Typography variant="subtitle1" color="text.secondary" align="left">Senior C# developer.</Typography>

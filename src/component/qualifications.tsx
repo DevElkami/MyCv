@@ -20,50 +20,11 @@ function Qualifications() {
                             <TimelineDot color="secondary" />
                             <TimelineConnector />
                             </TimelineSeparator>
-                            <TimelineContent>                                                                
+                            <TimelineContent>       
                                 <Stack spacing={{ xs: 1 }} direction="row" alignItems="center">
-                                    <Typography sx={{ fontWeight: 'medium', fontStyle: 'italic' }} variant="subtitle1" component="div">Dec 2022 - Present</Typography>                                    
+                                    <Typography sx={{ fontWeight: 'medium', fontStyle: 'italic' }} variant="subtitle1" component="div">2024</Typography>
                                     <HorizontalRuleIcon color="secondary" />
-                                    <Typography sx={{ fontWeight: 'bold' }} variant="subtitle1" component="div">Cyberjet - Le Teich</Typography>
-                                </Stack>
-                            </TimelineContent>
-                        </TimelineItem>
-                        <TimelineItem>
-                            <TimelineSeparator>
-                            <TimelineDot color="secondary" />
-                            <TimelineConnector />
-                            </TimelineSeparator>
-                            <TimelineContent>
-                                <Stack spacing={{ xs: 1 }} direction="row" alignItems="center">
-                                    <Typography sx={{ fontWeight: 'medium', fontStyle: 'italic' }} variant="subtitle1" component="div">Feb 2008 - Dec 2022</Typography>
-                                    <HorizontalRuleIcon color="secondary" />
-                                    <Typography sx={{ fontWeight: 'bold' }} variant="subtitle1" component="div">i2S - Pessac</Typography>
-                                </Stack>
-                            </TimelineContent>
-                        </TimelineItem>
-                        <TimelineItem>
-                            <TimelineSeparator>
-                            <TimelineDot color="secondary" />
-                            <TimelineConnector />
-                            </TimelineSeparator>
-                            <TimelineContent>
-                                <Stack spacing={{ xs: 1 }} direction="row" alignItems="center">
-                                    <Typography sx={{ fontWeight: 'medium', fontStyle: 'italic' }} variant="subtitle1" component="div">Dec 2022 - Present</Typography>                                    
-                                    <HorizontalRuleIcon color="secondary" />
-                                    <Typography sx={{ fontWeight: 'bold' }} variant="subtitle1" component="div">Cyberjet - Le Teich</Typography>
-                                </Stack>
-                            </TimelineContent>
-                        </TimelineItem>
-                        <TimelineItem>
-                            <TimelineSeparator>
-                            <TimelineDot color="secondary" />
-                            <TimelineConnector />
-                            </TimelineSeparator>
-                            <TimelineContent>
-                                <Stack spacing={{ xs: 1 }} direction="row" alignItems="center">
-                                    <Typography sx={{ fontWeight: 'medium', fontStyle: 'italic' }} variant="subtitle1" component="div">Dec 2022 - Present</Typography>                                    
-                                    <HorizontalRuleIcon color="secondary" />
-                                    <Typography sx={{ fontWeight: 'bold' }} variant="subtitle1" component="div">Cyberjet - Le Teich</Typography>
+                                    <Typography sx={{ fontWeight: 'medium' }} variant="subtitle1" component="div">React - Alex MOULINNEUF (Le Teich)</Typography>
                                 </Stack>
                             </TimelineContent>
                         </TimelineItem>
@@ -74,23 +35,62 @@ function Qualifications() {
                             </TimelineSeparator>
                             <TimelineContent>       
                                 <Stack spacing={{ xs: 1 }} direction="row" alignItems="center">
-                                    <Typography sx={{ fontWeight: 'medium', fontStyle: 'italic' }} variant="subtitle1" component="div">Dec 2022 - Present</Typography>                                    
+                                    <Typography sx={{ fontWeight: 'medium', fontStyle: 'italic' }} variant="subtitle1" component="div">2023</Typography>
                                     <HorizontalRuleIcon color="secondary" />
-                                    <Typography sx={{ fontWeight: 'bold' }} variant="subtitle1" component="div">Cyberjet - Le Teich</Typography>
+                                    <Typography sx={{ fontWeight: 'medium' }} variant="subtitle1" component="div">ORO.FTL - Conseil ACB (Le Teich)</Typography>
                                 </Stack>
                             </TimelineContent>
                         </TimelineItem>
                         <TimelineItem>
                             <TimelineSeparator>
-                            <TimelineDot color="secondary" />                            
+                            <TimelineDot color="secondary" />
+                            <TimelineConnector />
                             </TimelineSeparator>
                             <TimelineContent>       
                                 <Stack spacing={{ xs: 1 }} direction="row" alignItems="center">
-                                    <Typography sx={{ fontWeight: 'medium', fontStyle: 'italic' }} variant="subtitle1" component="div">Dec 2022 - Present</Typography>                                    
+                                    <Typography sx={{ fontWeight: 'medium', fontStyle: 'italic' }} variant="subtitle1" component="div">2017</Typography>
                                     <HorizontalRuleIcon color="secondary" />
-                                    <Typography sx={{ fontWeight: 'bold' }} variant="subtitle1" component="div">Cyberjet - Le Teich</Typography>
+                                    <Typography sx={{ fontWeight: 'medium' }} variant="subtitle1" component="div">ASP.NET Certification - ORSYS (Paris)</Typography>
                                 </Stack>
-                            </TimelineContent>                          
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineSeparator>
+                            <TimelineDot color="secondary" />
+                            <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent>       
+                                <Stack spacing={{ xs: 1 }} direction="row" alignItems="center">
+                                    <Typography sx={{ fontWeight: 'medium', fontStyle: 'italic' }} variant="subtitle1" component="div">2015</Typography>
+                                    <HorizontalRuleIcon color="secondary" />
+                                    <Typography sx={{ fontWeight: 'medium' }} variant="subtitle1" component="div">Scrum Master™ Certification - Ayeba (Bordeaux)</Typography>
+                                </Stack>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineSeparator>
+                            <TimelineDot color="secondary" />
+                            <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent>
+                                <Stack spacing={{ xs: 1 }} direction="row" alignItems="center">
+                                    <Typography sx={{ fontWeight: 'medium', fontStyle: 'italic' }} variant="subtitle1" component="div">2012</Typography>                                    
+                                    <HorizontalRuleIcon color="secondary" />
+                                    <Typography sx={{ fontWeight: 'medium' }} variant="subtitle1" component="div">Scrum - ORSYS (Paris)</Typography>
+                                </Stack>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineSeparator>
+                            <TimelineDot color="secondary" />
+                            </TimelineSeparator>
+                            <TimelineContent>       
+                                <Stack spacing={{ xs: 1 }} direction="row" alignItems="center">
+                                    <Typography sx={{ fontWeight: 'medium', fontStyle: 'italic' }} variant="subtitle1" component="div">2004</Typography>                                    
+                                    <HorizontalRuleIcon color="secondary" />
+                                    <Typography sx={{ fontWeight: 'medium' }} variant="subtitle1" component="div">Master of Science - University of La Rochelle</Typography>
+                                </Stack>
+                            </TimelineContent>
                         </TimelineItem>
                     </Timeline>
                 </Stack>

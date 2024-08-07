@@ -25,7 +25,7 @@ function Experiences() {
                                 <Stack spacing={{ xs: 1 }} direction="row" alignItems="center">
                                     <Typography sx={{ fontWeight: 'medium', fontStyle: 'italic' }} variant="subtitle1" component="div">Dec 2022 - Present</Typography>                                    
                                     <HorizontalRuleIcon color="secondary" />
-                                    <Typography sx={{ fontWeight: 'bold' }} variant="subtitle1" component="div">Cyberjet - Le Teich</Typography>
+                                    <Typography sx={{ fontWeight: 'medium' }} variant="subtitle1" component="div">Cyberjet (Le Teich)</Typography>
                                 </Stack>                                    
                                 <Typography component={'span'}>
                                     <List>
@@ -78,7 +78,7 @@ function Experiences() {
                                 <Stack spacing={{ xs: 1 }} direction="row" alignItems="center">
                                     <Typography sx={{ fontWeight: 'medium', fontStyle: 'italic' }} variant="subtitle1" component="div">Feb 2008 - Dec 2022</Typography>
                                     <HorizontalRuleIcon color="secondary" />
-                                    <Typography sx={{ fontWeight: 'bold' }} variant="subtitle1" component="div">i2S - Pessac</Typography>
+                                    <Typography sx={{ fontWeight: 'medium' }} variant="subtitle1" component="div">i2S (Pessac)</Typography>
                                 </Stack>
                                 <Typography component={'span'}>
                                 <List>
@@ -119,7 +119,7 @@ function Experiences() {
                                 <Stack spacing={{ xs: 1 }} direction="row" alignItems="center">
                                     <Typography sx={{ fontWeight: 'medium', fontStyle: 'italic' }} variant="subtitle1" component="div">Nov 2006 - Fev 2008</Typography>
                                     <HorizontalRuleIcon color="secondary" />
-                                    <Typography sx={{ fontWeight: 'bold' }} variant="subtitle1" component="div">Apside - Bordeaux</Typography>
+                                    <Typography sx={{ fontWeight: 'medium' }} variant="subtitle1" component="div">Apside (Bordeaux)</Typography>
                                 </Stack>
                                 <Typography component={'span'}>
                                 <List>
@@ -142,7 +142,7 @@ function Experiences() {
                                 <Stack spacing={{ xs: 1 }} direction="row" alignItems="center">
                                     <Typography sx={{ fontWeight: 'medium', fontStyle: 'italic' }} variant="subtitle1" component="div">Jul 2005 - Nov 2006</Typography>
                                     <HorizontalRuleIcon color="secondary" />
-                                    <Typography sx={{ fontWeight: 'bold' }} variant="subtitle1" component="div">Arpège - Nantes</Typography>
+                                    <Typography sx={{ fontWeight: 'medium' }} variant="subtitle1" component="div">Arpège (Nantes)</Typography>
                                 </Stack>
                                 <Typography component={'span'}>
                                 <List>
@@ -171,7 +171,7 @@ function Experiences() {
                                 <Stack spacing={{ xs: 1 }} direction="row" alignItems="center">
                                     <Typography sx={{ fontWeight: 'medium', fontStyle: 'italic' }} variant="subtitle1" component="div">Oct 2004 - Apr 2005</Typography>
                                     <HorizontalRuleIcon color="secondary" />
-                                    <Typography sx={{ fontWeight: 'bold' }} variant="subtitle1" component="div">L3i - La Rochelle</Typography>
+                                    <Typography sx={{ fontWeight: 'medium' }} variant="subtitle1" component="div">L3i (La Rochelle)</Typography>
                                 </Stack>
                                 <Typography component={'span'}>
                                 <List>         

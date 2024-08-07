@@ -24,6 +24,7 @@ function App() {
                         <Stack direction="column" spacing={{ xs: 1, sm: 2, md: 3 }}>
                             <WhoIam action={() => setLight((prev) => !prev)} />
                             <Languages />
+                            <Skills />
                             <Interests />
                         </Stack>
                     </Grid>
@@ -33,7 +34,6 @@ function App() {
                             <Summary />
                             <Experiences />
                             <Qualifications />
-                            <Skills />                            
                         </Stack>
                     </Grid>
                 </Grid>
