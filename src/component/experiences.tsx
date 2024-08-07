@@ -8,7 +8,7 @@ function Experiences() {
         <Card>
             <CardContent>                
                 <Stack direction="column" spacing={{ xs: 1, sm: 1, md: 1 }}>
-                    <Typography variant="h5" component="div" align="left">Experiences</Typography>                    
+                    <Typography variant="h5" component="div" align="left">Work experience</Typography>                    
                     <Accordion>
                         <AccordionSummary
                             expandIcon={<ArrowDropDownIcon color="secondary" />}
@@ -64,6 +64,12 @@ function Experiences() {
                                             <ListItemText>Aviation regulations (EASA ORO.FTL, EU-OPS)</ListItemText>
                                         </ListItemButton>
                                     </ListItem>
+                                    <ListItem disablePadding>
+                                        <ListItemButton>
+                                            <ListItemIcon><ArrowRightIcon color="secondary" /></ListItemIcon>
+                                            <ListItemText>Unit testing (Locust, MSTest)</ListItemText>
+                                        </ListItemButton>
+                                    </ListItem>
                                 </List>
                             </Typography>
                         </AccordionDetails>
@@ -109,6 +115,12 @@ function Experiences() {
                                         <ListItemButton>
                                             <ListItemIcon><ArrowRightIcon color="secondary" /></ListItemIcon>
                                             <ListItemText>Image analysis (OpenCV, Pylon API, C++)</ListItemText>
+                                        </ListItemButton>
+                                    </ListItem>
+                                    <ListItem disablePadding>
+                                        <ListItemButton>
+                                            <ListItemIcon><ArrowRightIcon color="secondary" /></ListItemIcon>
+                                            <ListItemText>Unit testing (Google Test, MSTest)</ListItemText>
                                         </ListItemButton>
                                     </ListItem>
                                 </List>

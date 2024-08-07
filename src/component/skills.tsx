@@ -7,31 +7,40 @@ function Skills() {
                     <Typography variant="h5" component="div" align="left">Skills</Typography>
                     <Box>
                         <Stack spacing={{ xs: 1 }}>
-                            <Stack direction="row" justifyContent="space-between" alignItems="center">
-                                <Typography variant="subtitle1" color="text.secondary">C#</Typography>
-                                <Typography variant="body2" color="text.secondary">20 Years</Typography>
-                            </Stack>
-                            <LinearProgress color="secondary" variant="determinate" value={100} />
+                            <Typography align="left" variant="subtitle1" color="text.secondary">C#</Typography>
+                            <LinearProgress color="secondary" variant="determinate" value={90} />
                         </Stack>
                     </Box>
                     <Box>
                         <Stack spacing={{ xs: 1 }}>
-                            <Stack direction="row" justifyContent="space-between" alignItems="center">
-                                <Typography variant="subtitle1" color="text.secondary">C++</Typography>
-                                <Typography variant="body2" color="text.secondary">10 Years</Typography>
-                            </Stack>
-                            <LinearProgress color="secondary" variant="determinate" value={50} />
+                            <Typography align="left" variant="subtitle1" color="text.secondary">ASP.NET Core</Typography>
+                            <LinearProgress color="secondary" variant="determinate" value={90} />
                         </Stack>
                     </Box>
                     <Box>
                         <Stack spacing={{ xs: 1 }}>
-                            <Stack direction="row" justifyContent="space-between" alignItems="center">
-                                <Typography variant="subtitle1" color="text.secondary">Asp .NET Core</Typography>
-                                <Typography variant="body2" color="text.secondary">2 Years</Typography>
-                            </Stack>
-                            <LinearProgress color="secondary" variant="determinate" value={10} />
+                            <Typography align="left" variant="subtitle1" color="text.secondary">Dev Ops</Typography>
+                            <LinearProgress color="secondary" variant="determinate" value={85} />
                         </Stack>
                     </Box>
+                    <Box>
+                        <Stack spacing={{ xs: 1 }}>
+                            <Typography align="left" variant="subtitle1" color="text.secondary">SQL</Typography>
+                            <LinearProgress color="secondary" variant="determinate" value={80} />
+                        </Stack>
+                    </Box>                    
+                    <Box>
+                        <Stack spacing={{ xs: 1 }}>
+                            <Typography align="left" variant="subtitle1" color="text.secondary">C++</Typography>
+                            <LinearProgress color="secondary" variant="determinate" value={75} />
+                        </Stack>
+                    </Box>
+                    <Box>
+                        <Stack spacing={{ xs: 1 }}>
+                            <Typography align="left" variant="subtitle1" color="text.secondary">React</Typography>
+                            <LinearProgress color="secondary" variant="determinate" value={60} />
+                        </Stack>
+                    </Box>          
                 </Stack>
             </CardContent>
         </Card>

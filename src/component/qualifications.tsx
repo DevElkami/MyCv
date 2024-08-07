@@ -1,37 +1,53 @@
-import { Stack, Typography, Card, CardContent, Box, Divider } from "@mui/material";
+import { Stack, Typography, Card, CardContent, Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText} from "@mui/material";
+import CheckIcon from '@mui/icons-material/Check';
 
 function Qualifications() {
     return (
         <Card>
             <CardContent>
                 <Stack direction="column" spacing={{ xs: 1, sm: 1, md: 1 }}>
-                    <Typography variant="h5" component="div" align="left">Qualifications</Typography>
+                    <Typography variant="h5" component="div" align="left">Educations and qualifications</Typography>
                     <Box>
-                        <Stack spacing={{ xs: 1 }}>
-                            <Stack direction="row" justifyContent="space-between" alignItems="center">
-                                <Typography variant="subtitle1" color="text.secondary">C#</Typography>
-                                <Typography variant="body2" color="text.secondary">20 Years</Typography>
-                            </Stack>
-                            <Divider sx={{ background: '#9C27B0' }} />
-                        </Stack>
-                    </Box>
-                    <Box>
-                        <Stack spacing={{ xs: 1 }}>
-                            <Stack direction="row" justifyContent="space-between" alignItems="center">
-                                <Typography variant="subtitle1" color="text.secondary">C++</Typography>
-                                <Typography variant="body2" color="text.secondary">10 Years</Typography>
-                            </Stack>
-                            <Divider sx={{ background: '#9C27B0' }} />
-                        </Stack>
-                    </Box>
-                    <Box>
-                        <Stack spacing={{ xs: 1 }}>
-                            <Stack direction="row" justifyContent="space-between" alignItems="center">
-                                <Typography variant="subtitle1" color="text.secondary">Asp .NET Core</Typography>
-                                <Typography variant="body2" color="text.secondary">2 Years</Typography>
-                            </Stack>
-                            <Divider sx={{ background: '#9C27B0' }} />
-                        </Stack>
+                        <Typography component={'span'}>
+                            <List disablePadding>
+                                <ListItem disablePadding>
+                                    <ListItemButton>
+                                        <ListItemIcon><CheckIcon color="secondary" /></ListItemIcon>
+                                        <ListItemText>React (Syncfusion, Zustand)</ListItemText>
+                                    </ListItemButton>
+                                </ListItem>                                     
+                                <ListItem disablePadding>
+                                    <ListItemButton>
+                                        <ListItemIcon><CheckIcon color="secondary" /></ListItemIcon>
+                                        <ListItemText>Api REST / ASP.NET (C#, .net 8.0, Swagger, Entity, Visual Studio 2022)</ListItemText>
+                                    </ListItemButton>
+                                </ListItem>
+                                <ListItem disablePadding>
+                                    <ListItemButton>
+                                        <ListItemIcon><CheckIcon color="secondary" /></ListItemIcon>
+                                        <ListItemText>Sql server (SQL Server Management Studio, stored procedure, dacpac)</ListItemText>
+                                    </ListItemButton>
+                                </ListItem>
+                                <ListItem disablePadding>
+                                    <ListItemButton>
+                                        <ListItemIcon><CheckIcon color="secondary" /></ListItemIcon>
+                                        <ListItemText>Azure Dev Ops (Pipelines, Artifacts, Releases, Deployment groups)</ListItemText>
+                                    </ListItemButton>
+                                </ListItem>
+                                <ListItem disablePadding>
+                                    <ListItemButton>
+                                        <ListItemIcon><CheckIcon color="secondary" /></ListItemIcon>
+                                        <ListItemText>Aviation regulations (EASA ORO.FTL, EU-OPS)</ListItemText>
+                                    </ListItemButton>
+                                </ListItem>
+                                <ListItem disablePadding>
+                                    <ListItemButton>
+                                        <ListItemIcon><CheckIcon color="secondary" /></ListItemIcon>
+                                        <ListItemText>Unit testing (Locust, MSTest)</ListItemText>
+                                    </ListItemButton>
+                                </ListItem>
+                            </List>
+                        </Typography>
                     </Box>
                 </Stack>
             </CardContent>
