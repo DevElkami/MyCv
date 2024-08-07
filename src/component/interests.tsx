@@ -24,7 +24,7 @@ function Interests() {
     });
 
     return (
-        <Card>
+        <Card style={{ border: "2px solid #9C27B0" }}>
             <CardContent>
                 <Stack direction="column" spacing={1}>
                     <Typography variant="h5" component="div" align="left">Interests</Typography>

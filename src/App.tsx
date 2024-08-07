@@ -1,4 +1,4 @@
-﻿import { Unstable_Grid2 as Grid, Stack, ThemeProvider, createTheme } from "@mui/material";
+﻿import { Unstable_Grid2 as Grid, Stack, ThemeProvider, createTheme, CssBaseline } from "@mui/material";
 
 import React from "react";
 
@@ -10,7 +10,6 @@ import Skills from './component/skills'
 import Languages from './component/languages'
 import Interests from './component/interests'
 import Summary from './component/summary'
-import ToggleTheme from './component/toggleTheme'
 
 const darkTheme = createTheme({ palette: { mode: 'dark' } });
 const lightTheme = createTheme({ palette: { mode: 'light' } });
@@ -20,25 +19,26 @@ function App() {
     return (
         <>
             <ThemeProvider theme={light ? lightTheme : darkTheme}>
-                <Grid container rowSpacing={2} columnSpacing={4}>
-                    <Grid xs={4} >
-                        <Stack direction="column" spacing={{ xs: 1, sm: 2, md: 3 }}>
-                            <WhoIam />
-                            <Languages />
-                            <Interests />
-                        </Stack>
-                    </Grid>
+                <CssBaseline>
+                    <Grid container rowSpacing={2} columnSpacing={4}>
+                        <Grid xs={4} >
+                            <Stack direction="column" spacing={{ xs: 1, sm: 2, md: 3 }}>
+                                <WhoIam action={() => setLight((prev) => !prev)} />
+                                <Languages />
+                                <Skills />
+                                <Interests />
+                            </Stack>
+                        </Grid>
 
-                    <Grid xs>
-                        <Stack direction="column" spacing={{ xs: 1, sm: 2, md: 3 }}>
-                            <Summary />
-                            <Experiences />
-                            <Qualifications />
-                            <Skills />                            
-                        </Stack>
+                        <Grid xs>
+                            <Stack direction="column" spacing={{ xs: 1, sm: 2, md: 3 }}>
+                                <Summary />
+                                <Experiences />
+                                <Qualifications />
+                            </Stack>
+                        </Grid>
                     </Grid>
-                </Grid>
-                <ToggleTheme action={() => setLight((prev) => !prev)} />
+                </CssBaseline>
             </ThemeProvider>
         </>
     )
