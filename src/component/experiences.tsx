@@ -91,7 +91,7 @@ function Experiences() {
                             </Box>
                         </AccordionSummary>
                         <AccordionDetails>
-                        <Typography component={'span'}>
+                            <Typography component={'span'}>
                                 <List>
                                     <ListItem disablePadding>
                                         <ListItemButton>
@@ -104,7 +104,13 @@ function Experiences() {
                                             <ListItemIcon><ArrowRightIcon color="secondary" /></ListItemIcon>
                                             <ListItemText>Sql (SQL Server, MySQL, SQLite, Dapper)</ListItemText>
                                         </ListItemButton>
-                                    </ListItem>                                    
+                                    </ListItem>
+                                    <ListItem disablePadding>
+                                        <ListItemButton>
+                                            <ListItemIcon><ArrowRightIcon color="secondary" /></ListItemIcon>
+                                            <ListItemText>Image analysis (OpenCV, Pylon API, C++)</ListItemText>
+                                        </ListItemButton>
+                                    </ListItem>
                                 </List>
                             </Typography>
                         </AccordionDetails>
@@ -132,9 +138,15 @@ function Experiences() {
                             </Box>
                         </AccordionSummary>
                         <AccordionDetails>
-                            <Typography>
-                                Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-                                Aliquam eget maximus est, id dignissim quam.
+                            <Typography component={'span'}>
+                                <List>
+                                    <ListItem disablePadding>
+                                        <ListItemButton>
+                                            <ListItemIcon><ArrowRightIcon color="secondary" /></ListItemIcon>
+                                            <ListItemText>WPF / Winform (C#, C++, Marshaling , .net 2.0, Visual studio 2005)</ListItemText>
+                                        </ListItemButton>
+                                    </ListItem>                                                                                                                                            
+                                </List>
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
@@ -161,9 +173,21 @@ function Experiences() {
                             </Box>
                         </AccordionSummary>
                         <AccordionDetails>
-                            <Typography>
-                                Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-                                Aliquam eget maximus est, id dignissim quam.
+                            <Typography component={'span'}>
+                                <List>
+                                    <ListItem disablePadding>
+                                        <ListItemButton>
+                                            <ListItemIcon><ArrowRightIcon color="secondary" /></ListItemIcon>
+                                            <ListItemText>MFC (C++, Visual C++ 6.0)</ListItemText>
+                                        </ListItemButton>
+                                    </ListItem>                                                                                                                                            
+                                    <ListItem disablePadding>
+                                        <ListItemButton>
+                                            <ListItemIcon><ArrowRightIcon color="secondary" /></ListItemIcon>
+                                            <ListItemText>Sql (ODBC, Oracle, Toad)</ListItemText>
+                                        </ListItemButton>
+                                    </ListItem>
+                                </List>
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
@@ -190,9 +214,21 @@ function Experiences() {
                             </Box>
                         </AccordionSummary>
                         <AccordionDetails>
-                            <Typography>
-                                Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-                                Aliquam eget maximus est, id dignissim quam.
+                            <Typography component={'span'}>
+                                <List>         
+                                    <ListItem disablePadding>
+                                        <ListItemButton>
+                                            <ListItemIcon><ArrowRightIcon color="secondary" /></ListItemIcon>
+                                            <ListItemText>MFC (C++, Visual C++ 6.0)</ListItemText>
+                                        </ListItemButton>
+                                    </ListItem>                           
+                                    <ListItem disablePadding>
+                                        <ListItemButton>
+                                            <ListItemIcon><ArrowRightIcon color="secondary" /></ListItemIcon>
+                                            <ListItemText>Image analysis (OpenCV, IPL, DirectShow Filters)</ListItemText>
+                                        </ListItemButton>
+                                    </ListItem>
+                                </List>
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
