@@ -1,4 +1,4 @@
-import { Stack, Typography, LinearProgress, Box, Card, CardContent, Grid } from "@mui/material";
+import { Stack, Typography, LinearProgress, Card, CardContent, Grid } from "@mui/material";
 function Skills() {
     return (
         <Card>
