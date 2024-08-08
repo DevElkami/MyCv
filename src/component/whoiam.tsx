@@ -24,7 +24,7 @@ function WhoIam({ action }: Props) {
     useGSAP(() => {        
         gsap.to(document.getElementById("myavatar"), {
             duration: 1.5,
-            y: -16,
+            y: -10,
             repeat: -1,
             yoyo: true
         });
