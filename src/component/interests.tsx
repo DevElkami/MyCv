@@ -24,11 +24,11 @@ function Interests() {
     });
 
     return (
-        <Card style={{ border: "2px solid #9C27B0" }}>
+        <Card style={{ border: "2px solid #9C27B0", boxShadow: "none" }}>
             <CardContent>
                 <Stack direction="column" spacing={1}>
                     <Typography variant="h5" component="div" align="left">Interests</Typography>
-                    <Accordion>
+                    <Accordion disableGutters sx={{'&:before':{height:'0px'}, border: "2px solid #9C27B0", borderRadius: '5px', boxShadow: "none"}}>
                         <AccordionSummary
                             expandIcon={<ArrowDropDownIcon color="secondary" />}
                             aria-controls="panel1-content"
@@ -58,7 +58,7 @@ function Interests() {
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
-                    <Accordion>
+                    <Accordion disableGutters sx={{'&:before':{height:'0px'}, border: "2px solid #9C27B0", borderRadius: '5px', boxShadow: "none"}}>
                         <AccordionSummary
                             expandIcon={<ArrowDropDownIcon color="secondary" />}
                             aria-controls="panel2-content"

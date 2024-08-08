@@ -24,7 +24,7 @@ function WhoIam({ action }: Props) {
     useGSAP(() => {        
         gsap.to(document.getElementById("myavatar"), {
             duration: 1.5,
-            y: -16,
+            y: -10,
             repeat: -1,
             yoyo: true
         });
@@ -58,7 +58,7 @@ function WhoIam({ action }: Props) {
     };
 
     return (
-        <Card style={{ border: "2px solid #9C27B0" }}>
+        <Card style={{ border: "2px solid #9C27B0", boxShadow: "none" }}>
             <CardContent>
                 <Stack direction="column" spacing={{ xs: 1, sm: 2, md: 3 }}>
                     <Stack spacing={{ xs: 4 }}>
