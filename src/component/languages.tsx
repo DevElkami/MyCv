@@ -2,7 +2,7 @@
 
 function Languages() {
     return (
-        <Card style={{ border: "2px solid #9C27B0" }}>
+        <Card style={{ border: "2px solid #9C27B0", boxShadow: "none" }}>
             <CardContent>
                 <Stack direction="column" spacing={1}>
                     <Typography variant="h5" component="div" align="left">Languages</Typography>

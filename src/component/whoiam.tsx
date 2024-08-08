@@ -58,7 +58,7 @@ function WhoIam({ action }: Props) {
     };
 
     return (
-        <Card style={{ border: "2px solid #9C27B0" }}>
+        <Card style={{ border: "2px solid #9C27B0", boxShadow: "none" }}>
             <CardContent>
                 <Stack direction="column" spacing={{ xs: 1, sm: 2, md: 3 }}>
                     <Stack spacing={{ xs: 4 }}>
