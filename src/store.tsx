@@ -23,7 +23,7 @@ export const UseFeedsStore = create<IFeedState>((set, get) => ({
                         response.text().then(xml => {
                             const feed = extractFromXml(xml);
                             if (feed.entries) {
-                                entriesBlog = feed.entries.slice(1, 4);
+                                entriesBlog = feed.entries.slice(0, 5);
                                 set(() => ({
                                     feedsBlog: entriesBlog,
                                     initFeedsBlog: true
@@ -43,7 +43,7 @@ export const UseFeedsStore = create<IFeedState>((set, get) => ({
                         response.text().then(xml => {
                             const feed = extractFromXml(xml);
                             if (feed.entries) {
-                                entriesClimb = feed.entries.slice(1, 4);
+                                entriesClimb = feed.entries.slice(0, 5);
                                 set(() => ({
                                     feedsClimb: entriesClimb,
                                     initFeedsClimb: true
