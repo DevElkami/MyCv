@@ -1,4 +1,4 @@
-import { Stack, Typography, Card, CardContent } from "@mui/material";
+import { Stack, Typography, Card, CardContent, Link } from "@mui/material";
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem, { timelineItemClasses } from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -24,7 +24,7 @@ function Qualifications() {
                                 <Stack spacing={{ xs: 1 }} direction="row" alignItems="center">
                                     <Typography sx={{ fontWeight: 'medium', fontStyle: 'italic' }} variant="subtitle1" component="div">2024</Typography>
                                     <HorizontalRuleIcon color="secondary" />
-                                    <Typography sx={{ fontWeight: 'medium' }} variant="subtitle1" component="div">React - Alex MOULINNEUF (Le Teich)</Typography>
+                                    <Typography sx={{ fontWeight: 'medium' }} variant="subtitle1" component="div">React - <Link target="_blank" rel="noreferrer" underline="hover" href="https://www.alex-moulinneuf.fr">Alex MOULINNEUF</Link> (Le Teich)</Typography>
                                 </Stack>
                             </TimelineContent>
                         </TimelineItem>
@@ -50,7 +50,7 @@ function Qualifications() {
                                 <Stack spacing={{ xs: 1 }} direction="row" alignItems="center">
                                     <Typography sx={{ fontWeight: 'medium', fontStyle: 'italic' }} variant="subtitle1" component="div">2017</Typography>
                                     <HorizontalRuleIcon color="secondary" />
-                                    <Typography sx={{ fontWeight: 'medium' }} variant="subtitle1" component="div">ASP.NET Certification - ORSYS (Paris)</Typography>
+                                    <Typography sx={{ fontWeight: 'medium' }} variant="subtitle1" component="div">ASP.NET Certification - <Link target="_blank" rel="noreferrer" underline="hover" href="https://www.orsys.fr">ORSYS</Link> (Paris)</Typography>
                                 </Stack>
                             </TimelineContent>
                         </TimelineItem>
@@ -76,7 +76,7 @@ function Qualifications() {
                                 <Stack spacing={{ xs: 1 }} direction="row" alignItems="center">
                                     <Typography sx={{ fontWeight: 'medium', fontStyle: 'italic' }} variant="subtitle1" component="div">2012</Typography>                                    
                                     <HorizontalRuleIcon color="secondary" />
-                                    <Typography sx={{ fontWeight: 'medium' }} variant="subtitle1" component="div">Scrum - ORSYS (Paris)</Typography>
+                                    <Typography sx={{ fontWeight: 'medium' }} variant="subtitle1" component="div">Scrum - <Link target="_blank" rel="noreferrer" underline="hover" href="https://www.orsys.fr">ORSYS</Link> (Paris)</Typography>
                                 </Stack>
                             </TimelineContent>
                         </TimelineItem>
@@ -88,7 +88,7 @@ function Qualifications() {
                                 <Stack spacing={{ xs: 1 }} direction="row" alignItems="center">
                                     <Typography sx={{ fontWeight: 'medium', fontStyle: 'italic' }} variant="subtitle1" component="div">2004</Typography>                                    
                                     <HorizontalRuleIcon color="secondary" />
-                                    <Typography sx={{ fontWeight: 'medium' }} variant="subtitle1" component="div">Master of Science - University of La Rochelle</Typography>
+                                    <Typography sx={{ fontWeight: 'medium' }} variant="subtitle1" component="div">Master of Science - <Link target="_blank" rel="noreferrer" underline="hover" href="https://www.univ-larochelle.fr">University of La Rochelle</Link></Typography>
                                 </Stack>
                             </TimelineContent>
                         </TimelineItem>
