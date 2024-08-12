@@ -1,4 +1,4 @@
-﻿import { Unstable_Grid2 as Grid, Stack, ThemeProvider, createTheme, CssBaseline } from "@mui/material";
+﻿import { Grid, Stack, ThemeProvider, createTheme, CssBaseline } from "@mui/material";
 
 import React from "react";
 
@@ -20,8 +20,8 @@ function App() {
         <>
             <ThemeProvider theme={light ? lightTheme : darkTheme}>
                 <CssBaseline>
-                    <Grid container rowSpacing={2} columnSpacing={4}>
-                        <Grid xs={4} >
+                    <Grid container rowSpacing={2} columnSpacing={4} columns={4}>
+                        <Grid item xs={4} md={2}>
                             <Stack direction="column" spacing={{ xs: 1, sm: 2, md: 3 }}>
                                 <WhoIam action={() => setLight((prev) => !prev)} />
                                 <Languages />
@@ -30,7 +30,7 @@ function App() {
                             </Stack>
                         </Grid>
 
-                        <Grid xs>
+                        <Grid item xs={4} md={2}>
                             <Stack direction="column" spacing={{ xs: 1, sm: 2, md: 3 }}>
                                 <Summary />
                                 <Experiences />
