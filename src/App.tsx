@@ -21,7 +21,7 @@ function App() {
             <ThemeProvider theme={light ? lightTheme : darkTheme}>
                 <CssBaseline>
                     <Grid container rowSpacing={2} columnSpacing={4} columns={6}>
-                        <Grid item sm={6} md={2} order={{ sm: 2, md: 1 }}>
+                        <Grid item sm={6} md={2} order={{ xs: 2, sm: 2, md: 1 }}>
                             <Stack direction="column" spacing={{ xs: 1, sm: 2, md: 3 }}>
                                 <WhoIam action={() => setLight((prev) => !prev)} />
                                 <Languages />
@@ -30,7 +30,7 @@ function App() {
                             </Stack>
                         </Grid>
 
-                        <Grid item sm={6} md={4} order={{ sm: 1, md: 2 }}>
+                        <Grid item sm={6} md={4} order={{ xs: 1, sm: 1, md: 2 }}>
                             <Stack direction="column" spacing={{ xs: 1, sm: 2, md: 3 }}>
                                 <Summary />
                                 <Experiences />
