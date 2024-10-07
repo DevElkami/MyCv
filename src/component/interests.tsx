@@ -82,6 +82,7 @@ function Interests() {
                                     <LoopIcon id="feedsBlogLoading" />
                                 </div>
                                 <div style={{ visibility: (blogQuery.error) ? 'visible' : 'hidden' }}>
+                                    <Typography>Can't load this rss feed</Typography>
                                     <ErrorOutlineIcon id="feedsBlogError" />
                                 </div>
                             </Typography>
@@ -115,6 +116,7 @@ function Interests() {
                                     <LoopIcon id="feedsClimbLoading" />
                                 </div>
                                 <div style={{ visibility: (climbQuery.error) ? 'visible' : 'hidden' }}>
+                                    <Typography>Can't load this rss feed</Typography>
                                     <ErrorOutlineIcon id="feedsClimbError" />
                                 </div>
                             </Typography>
