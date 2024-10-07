@@ -1,5 +1,5 @@
-import { UseFeedsStore } from "../store"
-import { useEffect } from 'react';
+import { useQuery } from '@tanstack/react-query'
+import { extractFromXml, FeedEntry } from '@extractus/feed-extractor'
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { Stack, Typography, Accordion, AccordionSummary, AccordionDetails, Card, CardContent, List, ListItem, ListItemText, ListItemButton, ListItemIcon, Link } from "@mui/material";
@@ -7,21 +7,47 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import HikingIcon from '@mui/icons-material/Hiking';
 import LandscapeIcon from '@mui/icons-material/Landscape';
 import LoopIcon from '@mui/icons-material/Loop';
+import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
 
 gsap.registerPlugin(useGSAP);
 
 function Interests() {
+    const fetchRss = async (dest: string): Promise<FeedEntry[]> =>
+        {
+            try
+            {
+                const response = await fetch(dest);
+                if (!response.ok)
+                    throw new Error("Can't find server");
 
-    const { getFeeds, initFeedsBlog, initFeedsClimb, feedsBlog, feedsClimb } = UseFeedsStore();
+                const xml = await response.text();
+                const feed = extractFromXml(xml);
+                if (feed.entries)
+                    return feed.entries.slice(0, 5);
+            }
+            catch(error)
+            {
+                console.log(error)
+                throw new Error("Can't fetch rss:" + dest + error)
+            };
+
+            throw new Error("Can't find server:" + dest)
+        }        
+    
+    const blogQuery = useQuery({
+        queryKey: ['blog'],
+        queryFn: async () => fetchRss('/blog/'),
+      })
+
+    const climbQuery = useQuery({
+        queryKey: ['climb'],
+        queryFn: async () => fetchRss('/climb/'),
+      })
 
     useGSAP(() => {
         gsap.to(document.getElementById("feedsBlogLoading"), { duration: 2, transformOrigin: "50% 50%", repeat: -1, rotation: "-=360", opacity: 1, ease: "none" });
         gsap.to(document.getElementById("feedsClimbLoading"), { duration: 2, transformOrigin: "50% 50%", repeat: -1, rotation: "-=360", opacity: 1, ease: "none" });
-    });
-
-    useEffect(() => {
-        getFeeds();   
-    });
+    });    
 
     return (
         <Card style={{ border: "2px solid #9C27B0", boxShadow: "none" }}>
@@ -38,10 +64,10 @@ function Interests() {
                         </AccordionSummary>
                         <AccordionDetails>                            
                             <Typography component={'span'}>
-                                <div style={{ visibility: initFeedsBlog != undefined ? 'visible' : 'hidden' }}>
+                                <div style={{ visibility: (!blogQuery.isPending && !blogQuery.error) ? 'visible' : 'hidden' }}>
                                     <List>
                                     {
-                                        feedsBlog?.map(entry => (
+                                        blogQuery.data?.map(entry => (
                                             <ListItem key={entry.id} disablePadding>
                                                 <ListItemButton>
                                                     <ListItemIcon><HikingIcon /></ListItemIcon>
@@ -52,8 +78,11 @@ function Interests() {
                                     }
                                     </List>
                                 </div>
-                                <div style={{ visibility: ((initFeedsBlog == undefined) || (initFeedsBlog == false)) ? 'visible' : 'hidden' }}>
+                                <div style={{ visibility: (blogQuery.isPending) ? 'visible' : 'hidden' }}>
                                     <LoopIcon id="feedsBlogLoading" />
+                                </div>
+                                <div style={{ visibility: (blogQuery.error) ? 'visible' : 'hidden' }}>
+                                    <ErrorOutlineIcon id="feedsBlogError" />
                                 </div>
                             </Typography>
                         </AccordionDetails>
@@ -68,10 +97,10 @@ function Interests() {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography component={'span'}>
-                                <div style={{ visibility: initFeedsClimb != undefined ? 'visible' : 'hidden' }}>
+                                <div style={{ visibility: (!climbQuery.isPending && !climbQuery.error) ? 'visible' : 'hidden' }}>
                                     <List>
                                     {
-                                        feedsClimb?.map(entry => (
+                                        climbQuery.data?.map(entry => (
                                             <ListItem key={entry.id} disablePadding>
                                                 <ListItemButton>
                                                     <ListItemIcon><LandscapeIcon /></ListItemIcon>
@@ -82,8 +111,11 @@ function Interests() {
                                     }
                                     </List>
                                 </div>
-                                <div style={{ visibility: ((initFeedsClimb == undefined) || (initFeedsClimb == false)) ? 'visible' : 'hidden' }}>
+                                <div style={{ visibility: (climbQuery.isPending) ? 'visible' : 'hidden' }}>
                                     <LoopIcon id="feedsClimbLoading" />
+                                </div>
+                                <div style={{ visibility: (climbQuery.error) ? 'visible' : 'hidden' }}>
+                                    <ErrorOutlineIcon id="feedsClimbError" />
                                 </div>
                             </Typography>
                         </AccordionDetails>
